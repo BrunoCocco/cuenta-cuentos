@@ -1,0 +1,54 @@
+/* .cssReset !
+   License: none (public domain)!
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Indie Flower"; }
+
+header {
+  padding-top: 2%; }
+
+.head__title {
+  padding-bottom: 1%; }
+
+i {
+  font-size: 35px;
+  padding-top: 40px; }
+
+.ion-heart {
+  color: red; }
+
+span {
+  font-weight: bold; }
+
+p {
+  font-style: italic; }
+
+label {
+  font-size: 25px;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

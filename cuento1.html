@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>App cuenta cuentos!</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!--Google Font-->
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<!--ion icons-->
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-init>
+	<header class="row">
+		<article class="container">
+			<div class="col-xs-3 col-xs-offset-1 col-sm-2 col-sm-offset-2 ">
+				<a href="index.html"><i class="ion-android-arrow-back"></i></a>
+			</div>
+			<div class="col-xs-4 col-sm-4">
+				<h2 class="text-center text-warning">Cuento De Los Cuentos</h2>
+			</div>
+			<div class="col-xs-3 col-xs-offset-1 col-sm-2 col-sm-offset-2">
+				<a data-toggle="modal" data-target="#contact" href="#"><i class="ion-android-contact"></i></a>
+			</div>
+		</article>
+		<!--Modal contact!-->
+		<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-head">
+						<h3>. Contactamee! Sera un placer hablar contigo!</h3>
+					</div>
+					<div class="modal-body">
+						<h4>Mail: "<a href="https://gmail.com">Brunoe.cocco@gmail.com</a>".</h4>
+						<h4>Ingresa a mi red "<a href="https://www.linkedin.com/in/bruno-cocco-85a4a9100">LinkedIn</a>".</h4>
+						<h4>Mira mi perfil en "<a href="https://www.facebook.com/bruno.cocco">Facebook</a> (N)"</h4>
+						<h4><a href=""></a></h4>
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+    	</div>
+
+		<!--./Modal contact!-->
+	</header>
+	<br><br><br>
+	<main class="container">
+		<div class="col-xs-12 text-center">
+			<article class="row">
+					<label for="name"> cual es tu Nombre? </label>
+					<input ng-model="name"></imput>
+			</article>
+			<br>
+			<article>
+				<label for="name2">y el de tu novio? </label>
+				<input ng-model="name2"></input>
+			</article>
+			<br>
+			<article>
+				<label for="lugar">un lugar que te guste? </label>
+				<input ng-model="lugar"></input>
+			</article>
+		</div>
+	</main>
+	<br><br><br>
+	<section class="row">
+		<article class="container text-center">
+			<button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Let´s Go...</button>
+		</article>
+	</section>
+
+<!-- Modal box -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<!-- Modal header -->
+<section class="modal-header">
+<h4 class="modal-title" id="myModalLabel">{{name}} y {{name2}} en una Gran Aventura!</h4>
+</section>
+<!-- ./Modal header-->
+<!-- Modal body-->
+<section class="row">
+<article class="container modal-body">
+<div class="col-xs-12 col-sm-10  col-md-6">
+<p><span></span></p>
+</div>
+</article>
+</section>
+<!-- ./Modal body-->
+<!-- Modal footer-->
+<section class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close
+</button>
+</section>
+<!-- ./Modal footer-->
+</div> 
+<!--./ Modal Content-->
+</div>
+<!--./ Modal box-->
+</div>
+	
+	<!--Footer-->
+	<footer class="row">
+		<article class="container">
+			<div class="col-xs-12">
+				<h4 class="text-right">Hecho con <i class="ion-heart"></i> desde Argentina.</h4>
+				<h4 class="text-right">by: <a href="http://docview.ml">Bruno.</a></h4>
+			</div>
+		</article>
+	</footer>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	
+	<script type="text/javascript" src="js/angular.min.js"></script>
+</body>
+</html>
